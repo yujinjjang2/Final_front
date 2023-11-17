@@ -48,7 +48,7 @@ body > section {
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 150px;
 }
 
 /* 제목 영역 */
@@ -66,8 +66,8 @@ body > section {
 }
 
 #bone {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 #title-sec {
@@ -113,8 +113,13 @@ body > section {
 }
 
 .imgs {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
+    transition: filter 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+.imgs:hover {
+    filter: brightness(40%); /* 이미지의 밝기 감소 */
 }
 
 .heart1, .heart2 {
@@ -125,13 +130,13 @@ body > section {
 #emptyHeart-btn {
     border: none;
     background-color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #fullHeart-btn {
     border: none;
     background-color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #rightMove-section {
@@ -154,6 +159,26 @@ body > section {
 /* 오른쪽 여백 */
 #right-gap {
     flex-basis: 20%;
+}
+
+/* 오른쪽 하단 후원, 챗봇 아이콘 */
+.fixed-image {
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+    width: 50px;
+}
+
+.fixed-image:hover {
+    cursor: pointer;
+}
+
+#chat-image {
+    bottom: 10px;
+}
+
+#donate-image {
+    bottom: 70px;
 }
 
 /* 풋터 */

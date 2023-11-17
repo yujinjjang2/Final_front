@@ -11,9 +11,9 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-/* section, div {
+section, div {
     border: 1px solid black;
-} */
+}
 
 body {
     margin: 0px;
@@ -47,6 +47,7 @@ body > section {
     flex-basis: 60%;
     display: flex;
     justify-content: center;
+    padding: 150px;
 }
 
 /* 입양 절차 관련 이미지 */
