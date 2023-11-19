@@ -82,101 +82,161 @@ body > section {
 /* 내용 영역 */
 #cont-section {
     flex-basis: 90%;
-    display: flex;
 }
 
-#leftMove-section {
-    flex-basis: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-}
-
-#leftMove-btn {
-    border: none;
-    background-color: white;
-    font-size: 30px;
-}
-
-#leftMove-btn:hover {
-    cursor: pointer;
-}
-
-#one, #two, #three, #four {
-    flex-basis: 20%;
+#register-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 500px;
 }
 
-.img1, .img2 {
-    flex-basis: 30%;
+/* 사진 영역 */
+#photoLine-up {
+    flex-basis: 2%;
+    width: 400px;
+    background-color: #F9C9B0;
 }
 
-.imgs {
-    width: 150px;
-    height: 150px;
-    transition: filter 0.3s ease; /* 부드러운 전환 효과 */
+#photo-title {
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
 }
 
-.imgs:hover {
-    filter: brightness(40%); /* 이미지의 밝기 감소 */
+#photoLine-bottom {
+    flex-basis: 2%;
+    width: 400px;
+    background-color: #F9C9B0;
 }
 
-.heart1, .heart2 {
-    flex-basis: 20%;
-    padding-bottom: 20px;
+#photo-section {
+    flex-basis: 36%;
+    display: flex;
 }
 
-#emptyHeart-btn {
-    border: none;
-    background-color: white;
-    font-size: 20px;
-}
-
-#fullHeart-btn {
-    border: none;
-    background-color: white;
-    font-size: 20px;
-}
-
-#rightMove-section {
-    flex-basis: 10%;
+#photo-upload-sec {
+    flex-basis: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#rightMove-btn {
-    border: none;
-    background-color: white;
-    font-size: 30px;
+#noImage {
+    width: 130px;
+    height: 130px;
 }
 
-#rightMove-btn:hover {
+#upload-btn-sec {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#upload-btn-sec > * {
+    border: 1px solid #FFC0C0;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    margin: 14px;
+    padding: 5px 0px;
     cursor: pointer;
+    font-size: 13px;
+}
+
+#uploadInput {
+    display: none;
+}
+
+#img-delete-sec {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+
+#img-del-btn {
+    border: 1px solid #FFC0C0;
+    background-color: white;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    padding: 3px 0px;
+    cursor: pointer;
+}
+
+/* 내용 영역 */
+#contentLine-up {
+    flex-basis: 2%;
+    width: 400px;
+    background-color: #F9C9B0;
+}
+
+#content-title {
+    flex-basis: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#contentLine-bottom {
+    flex-basis: 2%;
+    width: 400px;
+    background-color: #F9C9B0;
+}
+
+#contentInsert-section {
+    flex-basis: 36%;
+}
+
+#textarea {
+    width: 400px;
+    height: 130px;
+    border: 2px solid #F9C9B0;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    margin: 10px 0px;
 }
 
 /* 등록하기 영역 */
-#register-sec {
+#register-section {
+    flex-basis: 10%;
     display: flex;
-    justify-content: end;
-    padding-right: 100px;
-    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 #register-btn {
-    width: 110px;
+    width: 130px;
     height: 40px;
-    border: none;
-    border-radius: 5px;
     background-color: #FEE4D6;
     font-weight: bold;
+    border: none;
 }
 
 #register-btn:hover {
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 오른쪽 여백 */
 #right-gap {

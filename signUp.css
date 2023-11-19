@@ -1,5 +1,5 @@
 /* 글꼴 */
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/* @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); */
 
 .nanumgothic * {
  font-family: 'Nanum Gothic', sans-serif;
@@ -11,9 +11,9 @@
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-section, div {
+/* section, div {
     border: 1px solid black;
-}
+} */
 
 body {
     margin: 0px;
@@ -51,22 +51,13 @@ body > section {
     background-color: #FEE4D6;
     border-radius: 5px;
     align-items: center;
-    margin: 100px 400px;
+    margin: 100px 450px;
     padding: 50px;
 }
 
-
-
 /* 로고 영역 */
-#logo-sec {
-    flex-basis: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.signUpForm{
-    width: 100%;
+#logo-section {
+    flex-basis: 20%;
 }
 
 #logo {
@@ -74,25 +65,32 @@ body > section {
     height: 130px;
 }
 
-/* 아이디 영역 */
+/* 회원가입 form 영역 */
+#form-section {
+    flex-basis: 80%;
+    width: 100%;
+}
+
+#signUp-form {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+/* 아이디 */
 #id-sec {
     flex-basis: 5%;
     display: flex;
+    margin-bottom: 5px;
 }
 
 #id-tit {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-weight: bold;
-    padding-right: 5%;
 }
 
 #id-input {
     flex-basis: 50%;
-    /* margin-left: 50px; */
-}
-
-#id-btn{
-    flex-basis : 30%;
 }
 
 #id {
@@ -100,42 +98,47 @@ body > section {
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
-/* 아이디 중복검사 영역 */
+#id-blank {
+    flex-basis: 20%;
+}
+
 #id-dupli-sec {
-    flex-basis: 3%;
+    flex-basis: calc(17%/9);
     display: flex;
+    margin-bottom: 10px;
 }
 
-#id-dupli-sec-left {
+#id-left-blank {
     flex-basis: 30%;
 }
 
-#id-dupli-sec-right {
-    flex-basis: 70%;
+#id-center {
+    flex-basis: 50%;
+    font-weight: lighter;
+    font-size: 13px;
 }
 
-/* 비밀번호 영역 */
+#id-right-blank {
+    flex-basis: 20%;
+}
+
+/* 비밀번호 */
 #pw-sec {
     flex-basis: 5%;
     display: flex;
+    margin-bottom: 10px;
 }
 
 #pw-tit {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-weight: bold;
-    padding-right: 5%;
 }
 
 #pw-input {
     flex-basis: 50%;
-    /* margin-left: 50px; */
-}
-
-#pw-btn{
-    flex-basis:30%;
-
 }
 
 #pw {
@@ -143,27 +146,26 @@ body > section {
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
-/* 비밀번호 확인 영역 */
+#pw-blank {
+    flex-basis: 20%;
+}
+
 #pw-confir-sec {
     flex-basis: 5%;
     display: flex;
+    margin-bottom: 5px;
 }
 
 #pw-confir-tit {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-weight: bold;
-    padding-right: 5%;
 }
 
 #pw-confir-input {
     flex-basis: 50%;
-    /* margin-left: 50px; */
-}
-
-#pw-confir-btn{
-    flex-basis: 30%;
 }
 
 #pw-confir {
@@ -171,41 +173,47 @@ body > section {
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
-/* 비밀번호 유효성검사 영역 */
-#pw-effect-sec {
-    flex-basis: 3%;
+#pw-confir-blank {
+    flex-basis: 20%;
+}
+
+#pw-vali-sec {
+    flex-basis: calc(17%/9);
     display: flex;
+    margin-bottom: 10px;
 }
 
-#pw-effect-sec-left {
+#pw-left-blank {
     flex-basis: 30%;
 }
 
-#pw-effect-sec-right {
-    flex-basis: 70%;
+#pw-center {
+    flex-basis: 50%;
+    font-weight: lighter;
+    font-size: 13px;
 }
 
-/* 이름 영역 */
+#pw-right-blank {
+    flex-basis: 20%;
+}
+
+/* 이름 */
 #name-sec {
     flex-basis: 5%;
     display: flex;
+    margin-bottom: 5px;
 }
 
 #name-tit {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-weight: bold;
-    padding-right: 5%;
 }
 
 #name-input {
     flex-basis: 50%;
-    /* margin-left: 50px; */
-}
-
-#name-btn{
-    flex-basis: 30%;
 }
 
 #name {
@@ -213,41 +221,47 @@ body > section {
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
-/* 이름 유효성검사 영역 */
-#name-effect-sec {
-    flex-basis: 3%;
+#name-blank {
+    flex-basis: 20%;
+}
+
+#name-vali-sec {
+    flex-basis: calc(17%/9);
     display: flex;
+    margin-bottom: 10px;
 }
 
-#name-effect-sec-left {
+#name-left-blank {
     flex-basis: 30%;
 }
 
-#name-effect-sec-right {
-    flex-basis: 70%;
+#name-center {
+    flex-basis: 50%;
+    font-weight: lighter;
+    font-size: 13px;
 }
 
-/* 전화번호 영역 */
+#name-right-blank {
+    flex-basis: 20%;
+}
+
+/* 전화번호 */
 #phone-sec {
     flex-basis: 5%;
     display: flex;
+    margin-bottom: 5px;
 }
 
 #phone-tit {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-weight: bold;
-    padding-right: 5%;
 }
 
 #phone-input {
     flex-basis: 50%;
-    /* margin-left: 50px; */
-}
-
-#phone-btn{
-    flex-basis: 30%;
 }
 
 #phone {
@@ -255,46 +269,46 @@ body > section {
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
-/* 전화번호 유효성검사 영역 */
-#phone-effect-sec {
-    flex-basis: 3%;
+#phone-blank {
+    flex-basis: 20%;
+}
+
+#phone-vali-sec {
+    flex-basis: calc(17%/9);
     display: flex;
+    margin-bottom: 10px;
 }
 
-#phone-effect-sec-left {
+#phone-left-blank {
     flex-basis: 30%;
 }
 
-#phone-effect-sec-right {
-    flex-basis: 70%;
+#phone-center {
+    flex-basis: 50%;
+    font-weight: lighter;
+    font-size: 13px;
 }
 
-/* 이메일 영역 */
+#phone-right-blank {
+    flex-basis: 20%;
+}
+
+/* 이메일 */
 #email-sec {
     flex-basis: 5%;
     display: flex;
 }
 
 #email-tit {
-    flex-basis: 20%;
+    flex-basis: 30%;
     font-weight: bold;
-    padding-right: 5%;
 }
 
 #email-input {
     flex-basis: 50%;
-    /* margin-left: 50px; */
-}
-
-#email-btn{
-    flex-basis: 30%;
-}
-
-#num-btn-sec {
-    flex-basis: 10%;
-    margin-left: 50px;
 }
 
 #email {
@@ -302,72 +316,358 @@ body > section {
     height: 30px;
     border: none;
     border-radius: 5px;
+    padding-left: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-#email-effect-sec {
-    flex-basis: 3%;
+#authNum-section{
+    flex-basis: 20%;
 }
 
-#number-sec {
+#authNum-btn {
+    width: 80px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#authNum-btn:hover {
+    cursor: pointer;
+}
+
+#email-vali-sec {
+    flex-basis: calc(17%/9);
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#email-left-blank {
+    flex-basis: 30%;
+}
+
+#email-center {
+    flex-basis: 50%;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+#email-right-blank {
+    flex-basis: 20%;
+}
+
+#authNum-sec {
     flex-basis: 5%;
+    display: flex;
+    margin-bottom: 5px;
 }
 
-#number-effect-sec {
-    flex-basis: 3%;
+#authNum-tit {
+    flex-basis: 30%;
+    font-weight: bold;
 }
 
-#nickname-sec {
+#authNum-input {
+    flex-basis: 50%;
+}
+
+#authNum {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#authNum-confir-section {
+    flex-basis: 20%;
+}
+
+#authNum-confir-btn {
+    width: 80px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#authNum-confir-btn:hover {
+    cursor: pointer;
+}
+
+#authNum-vali-sec {
+    flex-basis: calc(17%/9);
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#authNum-left-blank {
+    flex-basis: 30%;
+}
+
+#authNum-center {
+    flex-basis: 50%;
+    font-weight: lighter;
+    font-size: 13px;
+}
+
+#authNum-right-blank {
+    flex-basis: 20%;
+}
+
+/* 닉네임 */
+#nickName-sec {
     flex-basis: 5%;
+    display: flex;
+    margin-bottom: 10px;
 }
 
-#address-sec1 {
+#nickName-tit {
+    flex-basis: 30%;
+    font-weight: bold;
+}
+
+#nickName-input {
+    flex-basis: 50%;
+}
+
+#nickName {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#nickName-blank {
+    flex-basis: 20%;
+}
+
+/* 주소 */
+.addr-sec {
     flex-basis: 5%;
+    display: flex;
 }
 
-#address-sec2 {
-    flex-basis: 5%;
+#addr-tit {
+    flex-basis: 30%;
+    font-weight: bold;
 }
 
-#address-sec3 {
-    flex-basis: 5%;
+#addr-input {
+    flex-basis: 50%;
 }
 
+#addr1 {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+#addr-btn-sec {
+    flex-basis: 20%;
+}
+
+#search-btn {
+    width: 50px;
+    height: 30px;
+    margin-left: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
+#line1-sec {
+    flex-basis: calc(17%/9);
+    display: flex;
+}
+
+#line1-left-blank {
+    flex-basis: 30%;
+}
+
+#line1-center {
+    flex-basis: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+#line1-right-blank {
+    flex-basis: 20%;
+}
+
+#addr-left-blank1 {
+    flex-basis: 30%;
+}
+
+#addr-input {
+    flex-basis: 50%;
+}
+
+#addr2 {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+#addr-right-blank1 {
+    flex-basis: 20%;
+}
+
+#line2-sec {
+    flex-basis: calc(17%/9);
+    display: flex;
+}
+
+#line2-left-blank {
+    flex-basis: 30%;
+}
+
+#line2-center {
+    flex-basis: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+#line2-right-blank {
+    flex-basis: 20%;
+}
+
+#addr-left-blank2 {
+    flex-basis: 30%;
+}
+
+#addr-input {
+    flex-basis: 50%;
+}
+
+#addr3 {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+#addr-right-blank2 {
+    flex-basis: 20%;
+}
+
+#line3-sec {
+    flex-basis: calc(17%/9);
+    display: flex;
+}
+
+#line3-left-blank {
+    flex-basis: 30%;
+}
+
+#line3-center {
+    flex-basis: 50%;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+}
+
+#line3-right-blank {
+    flex-basis: 20%;
+}
+
+/* 프로필 */
 #profile-sec {
-    flex-basis: 10%;
+    flex-basis: 16%;
+    display: flex;
+    margin-top: 10px;
 }
 
-#button-sec {
-    flex-basis: 5%;
+#profile-upload-sec {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
+#profile_noImage {
+    width: 70px;
+    height: 70px;
+}
 
+#upload-btn-sec {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#upload-btn-sec > * {
+    border: 1px solid #FFFDFD;
+    background-color: #FFFDFD;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    margin: 14px;
+    padding: 5px 0px;
+    cursor: pointer;
+    font-size: 13px;
+}
 
+#uploadInput {
+    display: none;
+}
 
+#img-delete-sec {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
 
+#img-del-btn {
+    border: 1px solid #FFFDFD;
+    background-color: #FFFDFD;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding: 3px 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
+/* 회원가입 버튼 */
+#signUp-btn-sec {
+    flex-basis: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
+#signUp-btn {
+    width: 300px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#signUp-btn:hover {
+    cursor: pointer;
+}
 
 /* 오른쪽 여백 */
 #right-gap {
